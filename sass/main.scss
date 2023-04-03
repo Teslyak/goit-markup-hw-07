@@ -1,0 +1,63 @@
+@import "./variables/var";
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: $color-background-primary;
+    color: $color-primary;
+}
+
+ul {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+    margin: 0;
+}
+
+button {
+    cursor: pointer;
+}
+
+/* Скидування стилей списку */
+.list {
+    list-style: none;
+}
+
+/* Скидування стилей посилань */
+.link {
+    text-decoration: none;
+}
+
+.container {
+    width: 1158px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.suptitle {
+    margin-bottom: 8px;
+}
+
+@import "./utils/visually-hidden";
+@import "./components/header_page";
+@import "./components/hero";

@@ -1,0 +1,309 @@
+@charset "UTF-8";
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #FFFFFF;
+  color: #434455;
+}
+
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+}
+
+button {
+  cursor: pointer;
+}
+
+/* Скидування стилей списку */
+.list {
+  list-style: none;
+}
+
+/* Скидування стилей посилань */
+.link {
+  text-decoration: none;
+}
+
+.container {
+  width: 1158px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.suptitle {
+  margin-bottom: 8px;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+  top: 470px;
+  left: 33px;
+}
+
+.header-link:hover,
+.header-link:focus {
+  color: #404BBF;
+}
+
+/* Колір для лого */
+.letter {
+  color: #4D5AE5;
+}
+
+.logo {
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.33;
+  color: #2E2F42;
+  text-decoration: none;
+}
+
+.header-link {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #2E2F42;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  display: block;
+}
+
+.contact-link {
+  font-style: normal;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #434455;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.contact-link:hover,
+.contact-link:focus {
+  color: #404BBF;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+}
+
+.contacts-list {
+  display: flex;
+  align-items: center;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+}
+
+.contacts-list .contact-link + .contact-link {
+  margin-right: 40px;
+}
+
+.logo {
+  margin-right: 76px;
+}
+
+.menu-list:not(:last-child) {
+  margin-right: 40px;
+}
+
+.contacts-list .contacts-item + .contacts-item {
+  margin-left: 40px;
+}
+
+.menu-contacts {
+  margin-left: auto;
+}
+
+.page-header {
+  border-bottom: 1px solid #E7E9FC;
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
+}
+
+.title {
+  font-weight: 700;
+  margin-bottom: 72px;
+}
+
+.menu-list {
+  position: relative;
+}
+
+.header-current-page::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  width: 100%;
+  height: 4px;
+  background-color: #404BBF;
+  border-radius: 2px;
+  display: block;
+}
+
+.menu .link {
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.color-link {
+  color: #404BBF;
+}
+
+.header-link:hover,
+.header-link:focus {
+  color: #404BBF;
+}
+
+/* Колір для лого */
+.letter {
+  color: #4D5AE5;
+}
+
+.logo {
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.33;
+  color: #2E2F42;
+  text-decoration: none;
+}
+
+.header-link {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #2E2F42;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  display: block;
+}
+
+.contact-link {
+  font-style: normal;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #434455;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.contact-link:hover,
+.contact-link:focus {
+  color: #404BBF;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+}
+
+.contacts-list {
+  display: flex;
+  align-items: center;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+}
+
+.contacts-list .contact-link + .contact-link {
+  margin-right: 40px;
+}
+
+.logo {
+  margin-right: 76px;
+}
+
+.menu-list:not(:last-child) {
+  margin-right: 40px;
+}
+
+.contacts-list .contacts-item + .contacts-item {
+  margin-left: 40px;
+}
+
+.menu-contacts {
+  margin-left: auto;
+}
+
+.page-header {
+  border-bottom: 1px solid #E7E9FC;
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
+}
+
+.title {
+  font-weight: 700;
+  margin-bottom: 72px;
+}
+
+.menu-list {
+  position: relative;
+}
+
+.header-current-page::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  width: 100%;
+  height: 4px;
+  background-color: #404BBF;
+  border-radius: 2px;
+  display: block;
+}
+
+.menu .link {
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.color-link {
+  color: #404BBF;
+}/*# sourceMappingURL=main.css.map */

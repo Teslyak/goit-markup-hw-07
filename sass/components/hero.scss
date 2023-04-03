@@ -1,0 +1,117 @@
+.header-link:hover,
+.header-link:focus {
+    color: $color-pressed-state;
+}
+
+/* Колір для лого */
+.letter {
+    color: $color-logo-links;
+}
+
+.logo {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.33;
+    color: $color-secondary;
+    text-decoration: none;
+}
+
+.header-link {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: $color-secondary;
+    transition: color $transition-dur-time-func;
+    display: block;
+}
+
+.contact-link {
+    font-style: normal;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: $color-primary;
+    transition: color $transition-dur-time-func;
+}
+
+.contact-link:hover,
+.contact-link:focus {
+    color: $color-pressed-state;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+}
+
+.contacts-list {
+    display: flex;
+    align-items: center;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+}
+
+.contacts-list .contact-link+.contact-link {
+    margin-right: 40px;
+}
+
+.logo {
+    margin-right: 76px;
+}
+
+.menu-list:not(:last-child) {
+    margin-right: 40px;
+}
+
+.contacts-list .contacts-item+.contacts-item {
+    margin-left: 40px;
+}
+
+.menu-contacts {
+    margin-left: auto;
+}
+
+.page-header {
+    border-bottom: 1px solid $color-border-btn;
+    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
+}
+
+.title {
+    font-weight: 700;
+    margin-bottom: 72px;
+}
+
+.menu-list {
+    position: relative;
+}
+
+.header-current-page::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    width: 100%;
+    height: 4px;
+    background-color: $color-pressed-state;
+    border-radius: 2px;
+    display: block;
+}
+
+.menu .link {
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
+.color-link {
+    color: $color-pressed-state;
+}
