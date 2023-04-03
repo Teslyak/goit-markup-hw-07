@@ -1,0 +1,35 @@
+.customers-title {
+font-weight: 700;
+letter-spacing: 0.02em;
+text-transform: capitalize;
+font-size: 36px;
+line-height: 1.11;
+text-align: center;
+margin-bottom: 72px;
+}
+.customers-list{
+display: flex;
+gap: 24px;
+}
+.customers-link {
+width: 168px;
+height: 88px;
+border: 1px solid $color-border-secondary;
+border-radius: 4px;
+display: flex;
+justify-content: center;
+align-items: center;
+color:$color-icons-customers;
+transition:color $transition-dur-time-func,
+            border-color $transition-dur-time-func  ;
+}
+.icon-customers {
+width: 104px;
+height: 56px;
+fill: currentColor;
+}
+.customers-link:hover,
+.customers-link:focus {
+border-color: $color-pressed-state;
+color: $color-pressed-state;
+}
