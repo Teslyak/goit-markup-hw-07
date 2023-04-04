@@ -1,0 +1,107 @@
+.project-btn {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    border-radius: 4px;
+    background-color: $color-bgr-btn;
+    border: 1px solid $color-border-btn;
+    color: $color-text-btn;
+    padding: 12px 24px;
+    transition: color $transition-dur-time-func,
+    background-color $transition-dur-time-func,
+        border-color $transition-dur-time-func,
+        box-shadow $transition-dur-time-func;
+}
+
+.project-btn:hover,
+.project-btn:focus {
+    background-color: $color-pressed-state;
+    color: $color-text;
+    border-color: transparent;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+.portfolio-project-title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    color: $color-secondary;
+}
+
+.portfolio-project-subtitle {
+    font-size: 16px;
+    line-height: 1.5;
+    color: $color-primary;
+}
+
+.project-filter-btn {
+    margin-bottom: 72px;
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+}
+
+.portfolio-project-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: -48px;
+    margin-left: -24px;
+}
+
+.portfolio-project-list>.Item {
+    /* flex-basis: calc (100%/3-24px); */
+    margin-top: 48px;
+    margin-left: 24px;
+}
+
+.filter-section {
+    padding-top: 96px;
+}
+
+.card-content {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    padding-left: 16px;
+    padding-right: 16px;
+    border-bottom: 1px solid $color-border-card;
+    border-left: 1px solid $color-border-card;
+    border-right: 1px solid $color-border-card;
+}
+
+.portfolio-project-img {
+    display: block;
+    transition: box-shadow $transition-dur-time-func;
+}
+
+.portfolio-project-img:hover,
+.portfolio-project-img:focus {
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+
+.card-thumb-wraper {
+    position: relative;
+    overflow: hidden;
+}
+
+.overlay-card-porfolio {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    background-color: $color-bg-card-portfolio;
+    color: $color-text-overlay;
+    padding: 40px 32px 40px;
+    transform: translate(0%, 100%);
+    transition: transform $transition-dur-time-func;
+}
+
+.portfolio-project-img:hover .overlay-card-porfolio,
+.portfolio-project-img:focus .overlay-card-porfolio {
+    transform: translate(0%, 0%);
+}

@@ -1,0 +1,147 @@
+.form-title {
+    margin-bottom: 16px;
+    text-align: center;
+}
+
+.modal-label {
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    margin-bottom: 4px;
+    display: block;
+}
+
+.modal-input {
+    padding: 0;
+    margin: 0;
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    border-radius: 4px;
+    width: 100%;
+    height: 40px;
+    padding-left: 38px;
+    transition: border-color $transition-dur-time-func;
+    color: $color-secondary;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+}
+
+.icon-wrap {
+    position: relative;
+}
+
+.icon-modal-input {
+    position: absolute;
+    top: 50%;
+    left: 16px;
+    transform: translateY(-50%);
+    transition: fill $transition-dur-time-func;
+}
+
+.modal-textarea {
+    resize: none;
+    width: 100%;
+    height: 120px;
+    padding-top: 8px;
+    padding-left: 16px;
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    border-radius: 4px;
+    transition: border-color $transition-dur-time-func;
+    color: $color-secondary;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+}
+
+.form-modal {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.btn-send {
+    border: none;
+    width: 169px;
+    height: 56px;
+    display: block;
+    margin: 0 auto;
+    background-color: $color-bg-btn-subscribe;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    color: $color-text;
+    padding: 16px 32px;
+    transition: background-color $transition-dur-time-func;
+}
+
+.btn-send:hover,
+.btn-send:focus {
+    background-color: $color-pressed-state;
+    outline: none;
+
+}
+
+.modal-input:hover,
+.modal-input:focus {
+    border-color: $color-bord-input;
+    outline: none;
+}
+
+.modal-textarea:hover,
+.modal-textarea:focus {
+    border-color: $color-bord-input;
+    outline: none;
+}
+
+.modal-input:hover+.icon-modal-input,
+.modal-input:focus+.icon-modal-input {
+    fill: $color-bord-input;
+}
+
+.chekbox-label {
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.chekbox-label:before {
+    content: '';
+    display: block;
+    width: 16px;
+    height: 16px;
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    border-radius: 2px;
+    cursor: pointer;
+    margin-right: 8px;
+    transition: border-color $transition-dur-time-func
+}
+
+.modal-chekbox:checked+.chekbox-label:before {
+    display: block;
+    background-color: $color-pressed-state;
+    border: none;
+    background-image: url(../images/chekbox.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.modal-chekbox:hover+.chekbox-label:before,
+.modal-chekbox:focus+.chekbox-label:before {
+    border-color: $color-bord-input;
+}
+
+.privacy-policy-link {
+    color: $color-logo-links;
+    transition: color $transition-dur-time-func;
+}
+
+.privacy-policy-link:hover,
+.privacy-policy-link:focus {
+    color: $color-pressed-state;
+}
