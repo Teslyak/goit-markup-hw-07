@@ -458,7 +458,7 @@ transition: background-color var(--transition-dur-time-func);
 }
 .social-footer-link:hover,
 .social-footer-link:focus {
-background-color: rgba(49, 208, 170, 1);;
+background-color: rgba(49, 208, 170, 1);
 }
 .social-footer-title {
 font-weight: 500;
