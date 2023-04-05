@@ -45,7 +45,7 @@
             </li>
           </ul>
         </nav>
-        <button type="button" class="menu-mobile-btn button">
+        <button type="button" class="menu-mobile-btn button" data-mobil-close>
           <svg class="menu-btn-icon" width="32" height="22">
             <use href="./images/icons.svg#icon-menu-hamburger"></use>
           </svg>
@@ -66,9 +66,9 @@
         </address>
       </div>
 
-      <div class="mobile-menu">
+      <div class="mobile-menu" data-mobil>
         <div class="mobil-menu-container mobile-menu-container-width">
-          <button class="mobile-menu-close">
+          <button class="mobile-menu-close" data-mobil-open>
             <svg class="mobile-menu-close-icon" width="8" height="8">
               <use href="./images/icons.svg#icon-btn-close"></use>
             </svg>
@@ -603,5 +603,6 @@
     </footer> -->
     <!-- ============================= /FOOTER /========================================== -->
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

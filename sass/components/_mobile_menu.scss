@@ -70,9 +70,7 @@
     padding-bottom: 40px;
     padding-right: 15px;
 }
-.container {
-    padding: 0;
-}
+
 
 .mobile-menu-tel{
     font-style: normal;
@@ -131,7 +129,11 @@ margin-bottom: 48px;
     align-items: center;
 }
 
-
+.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
 
 
 
