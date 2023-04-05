@@ -206,6 +206,8 @@ button {
   height: 100%;
   padding-top: 80px;
   padding-left: 40px;
+  padding-bottom: 40px;
+  padding-right: 15px;
 }
 
 .container {
@@ -242,13 +244,16 @@ button {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+
+.mobile-address {
   margin-bottom: 48px;
 }
 
 .mobile-menu-social {
   display: flex;
   gap: 56px;
-  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .mobile-menu-social-ithem {
