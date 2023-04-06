@@ -382,27 +382,11 @@ button {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  max-width: 480px;
+  max-width: 428px;
   margin-left: auto;
   margin-right: auto;
 }
 
-@media screen and (min-device-pixel-ratio: 2) and (max-width: 767px), screen and (-webkit-min-device-pixel-ratio: 2) and (max-width: 767px), screen and (min-resolution: 192dpi) and (max-width: 767px), screen and (min-resolution: 2dppx) and (max-width: 767px) {
-  .section-hero {
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(/images/mobile-hero2x.jpg);
-  }
-}
-@media screen and (min-width: 768px) {
-  .section-hero {
-    max-width: 768px;
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(/images/tablet-hero.jpg);
-  }
-}
-@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px), screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 768px), screen and (min-resolution: 192dpi) and (min-width: 768px), screen and (min-resolution: 2dppx) and (min-width: 768px) {
-  .section-hero {
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(/images/tablet-hero2x.jpg);
-  }
-}
 .hero-title {
   font-weight: 700;
   font-size: 36px;
@@ -444,6 +428,33 @@ button {
   background-color: #404BBF;
 }
 
+@media screen and (min-device-pixel-ratio: 2) and (max-width: 767px), screen and (-webkit-min-device-pixel-ratio: 2) and (max-width: 767px), screen and (min-resolution: 192dpi) and (max-width: 767px), screen and (min-resolution: 2dppx) and (max-width: 767px) {
+  .section-hero {
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(/images/mobile-hero2x.jpg);
+  }
+}
+@media screen and (min-width: 768px) {
+  .section-hero {
+    max-width: 768px;
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(/images/tablet-hero.jpg);
+  }
+}
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px), screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 768px), screen and (min-resolution: 192dpi) and (min-width: 768px), screen and (min-resolution: 2dppx) and (min-width: 768px) {
+  .section-hero {
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(/images/tablet-hero2x.jpg);
+  }
+}
+@media screen and (min-width: 1158px) {
+  .section-hero {
+    max-width: 1158px;
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(/images/desktop-hero.jpg);
+  }
+}
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1158px), screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 1158px), screen and (min-resolution: 192dpi) and (min-width: 1158px), screen and (min-resolution: 2dppx) and (min-width: 1158px) {
+  .section-hero {
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(/images/desktop-hero2x.jpg);
+  }
+}
 .features-title {
   font-weight: 500;
   font-size: 20px;
@@ -913,6 +924,16 @@ button {
   fill: #ffffff;
 }
 
+@media screen and (min-width: 768px) {
+  .modal {
+    width: 408px;
+  }
+}
+@media screen and (min-width: 1158px) {
+  .modal {
+    height: 584px;
+  }
+}
 .form-title {
   margin-bottom: 16px;
   text-align: center;
