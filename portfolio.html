@@ -36,7 +36,7 @@
             <li class="menu-list">
               <a
                 href="./portfolio.html"
-                class="header-link header-current-page link color-link"
+                class="header-link link header-current-page color-link"
                 >Portfolio</a
               >
             </li>
@@ -45,6 +45,11 @@
             </li>
           </ul>
         </nav>
+        <button type="button" class="menu-mobile-btn button" data-mobil-close>
+          <svg class="menu-btn-icon" width="32" height="22">
+            <use href="./images/icons.svg#icon-menu-hamburger"></use>
+          </svg>
+        </button>
         <address class="menu-contacts">
           <ul class="contacts-list list">
             <li class="contacts-item">
@@ -60,10 +65,82 @@
           </ul>
         </address>
       </div>
+
+      <div class="mobile-menu is-hidden" data-mobil>
+        <div class="mobil-menu-container mobile-menu-container-width">
+          <button class="mobile-menu-close" data-mobil-open>
+            <svg class="mobile-menu-close-icon" width="8" height="8">
+              <use href="./images/icons.svg#icon-btn-close"></use>
+            </svg>
+          </button>
+          <div class="menu-wrap">
+            <ul class="mobile-menu-list list">
+              <li class="mobile-menu-item">
+                <a href="" class="mobile-menu-link link">Studio</a>
+              </li>
+              <li class="mobile-menu-item">
+                <a href="" class="mobile-menu-link link">Portfolio</a>
+              </li>
+              <li class="mobile-menu-item">
+                <a href="" class="mobile-menu-link link">Contacts</a>
+              </li>
+            </ul>
+            <div class="mobile-menu-thumb">
+              <address class="mobile-address">
+                <ul class="mobile-menu-contacts list">
+                  <li class="mobile-menu-item">
+                    <a href="tel:+110001111111" class="mobile-menu-tel link"
+                      >+11 (000) 111-11-11</a
+                    >
+                  </li>
+                  <li class="mobile-menu-item">
+                    <a
+                      href="mailto:info@devstudio.com"
+                      class="mobile-menu-mail link"
+                      >info@devstudio.com</a
+                    >
+                  </li>
+                </ul>
+              </address>
+
+              <ul class="mobile-menu-social list">
+                <li class="mobile-menu-social-ithem">
+                  <a href="" class="mobile-menu-social-link link">
+                    <svg width="24" height="24">
+                      <use href="./images/icons.svg#icon-instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="mobile-menu-social-ithem">
+                  <a href="" class="mobile-menu-social-link link">
+                    <svg width="24" height="24">
+                      <use href="./images/icons.svg#icon-twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="mobile-menu-social-ithem">
+                  <a href="" class="mobile-menu-social-link link">
+                    <svg width="24" height="24">
+                      <use href="./images/icons.svg#icon-facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="mobile-menu-social-ithem">
+                  <a href="" class="mobile-menu-social-link link">
+                    <svg width="24" height="24">
+                      <use href="./images/icons.svg#icon-linkedin"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
     </header>
     <main>
       <!-- ==================Portfolio Filter button ============ -->
-      <section class="section filter-section">
+      <!-- <section class="section filter-section">
         <div class="container">
           <h1 class="visually-hidden">Filter Btn Active</h1>
           <ul class="project-filter-btn list">
@@ -82,10 +159,10 @@
             <li>
               <button type="button" class="project-btn">Marketing</button>
             </li>
-          </ul>
+          </ul> -->
 
-          <!--==================== Portfolio project================= -->
-          <h2 class="visually-hidden">Portfolio</h2>
+      <!--==================== Portfolio project================= -->
+      <!-- <h2 class="visually-hidden">Portfolio</h2>
           <ul class="portfolio-project-list list">
             <li class="Item">
               <a href="" class="portfolio-project-img link">
@@ -300,9 +377,9 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
     </main>
-    <footer class="section footer-page">
+    <!-- <footer class="section footer-page">
       <div class="container footer-container">
         <div class="footer-copyright">
           <a href="./index.html" class="logo"
@@ -372,6 +449,6 @@
           </div>
         </form>
       </div>
-    </footer>
+    </footer> -->
   </body>
 </html>
