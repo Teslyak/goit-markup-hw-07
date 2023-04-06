@@ -1,3 +1,11 @@
+
+
+@media screen and (max-width:767px) {
+    .menu-list {
+        display: none;
+    }
+
+}
 .mobile-menu {
     position: fixed;
     width: 100%;
@@ -151,5 +159,9 @@ margin-bottom: 48px;
     .mobile-menu {
         display: none;
     }
+
+
+
+    
 }
 

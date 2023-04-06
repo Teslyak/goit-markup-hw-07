@@ -56,7 +56,7 @@ button {
 }
 @media screen and (min-width: 768px) {
   .container {
-    width: 766px;
+    width: 768px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -120,13 +120,8 @@ button {
   text-decoration: none;
 }
 
-@media screen and (max-width: 1199px) {
-  .menu-contacts {
-    display: none;
-  }
-}
 @media screen and (max-width: 767px) {
-  .menu-list {
+  .menu-contacts {
     display: none;
   }
 }
@@ -134,8 +129,100 @@ button {
   .menu-mobile-btn {
     display: none;
   }
+  .menu {
+    display: flex;
+    align-items: center;
+  }
+  .page-header {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  .nav {
+    display: flex;
+    align-items: center;
+  }
+  .header-container {
+    padding-right: 16px;
+    padding-left: 16px;
+  }
+  .header-link {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #2E2F42;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    display: block;
+  }
+  .header-link:hover,
+  .header-link:focus {
+    color: #404BBF;
+  }
+  .contact-link:hover,
+  .contact-link:focus {
+    color: #404BBF;
+  }
+  .menu-list:not(:last-child) {
+    margin-right: 40px;
+  }
+  .page-header {
+    border-bottom: 1px solid #E7E9FC;
+    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
+  }
+  .logo {
+    margin-right: 76px;
+  }
+  .color-link {
+    color: #404BBF;
+  }
+  .menu-list {
+    position: relative;
+  }
+  .header-current-page::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    width: 100%;
+    height: 4px;
+    background-color: #404BBF;
+    border-radius: 2px;
+    display: block;
+  }
+  .menu .link {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+  .contact-link {
+    font-style: normal;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    color: #434455;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .menu-contacts .contacts-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
 }
-/* Колір для лого */
+@media screen and (min-width: 1200px) {
+  .menu-contacts .contacts-list {
+    flex-direction: row;
+    gap: 40px;
+  }
+  .contact-link {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+  }
+}
+@media screen and (max-width: 767px) {
+  .menu-list {
+    display: none;
+  }
+}
 .mobile-menu {
   position: fixed;
   width: 100%;
