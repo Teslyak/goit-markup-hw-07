@@ -1,6 +1,4 @@
 .section-hero {
-    padding-top: 112px;
-    padding-bottom: 112px;
     background-color: $color-secondary;
     background-image: linear-gradient(rgba(46, 47, 66, 0.7),
             rgba(46, 47, 66, 0.7)), url(../images/mobile-hero.jpg);
@@ -52,6 +50,10 @@
     background-color: $color-pressed-state;
 }
 
+.section.section-hero {
+padding-top: 112px;
+padding-bottom: 112px;
+}
 
 
 @media screen and (min-device-pixel-ratio: 2) and (max-width:767px),
@@ -82,17 +84,26 @@ screen and (min-resolution: 2dppx) and (min-width:768px) {
 }
 @media screen and (min-width:1158px) {
     .section-hero {
-        max-width: 1158px;
+        max-width: 1440px;
         background-image: linear-gradient(rgba(46, 47, 66, 0.7),
                 rgba(46, 47, 66, 0.7)), url(../images/desktop-hero.jpg);
     }
+    .section.section-hero {
+        padding-top: 188px;
+        padding-bottom: 188px;
+}
+
+.container.container-hero-desktop{
+    padding-left: 15px;
+    padding-right: 15px;
+}
 
 }
 
 @media screen and (min-device-pixel-ratio: 2) and (min-width:1158px),
 screen and (min-resolution: 192dpi) and (min-width:1158px),
 screen and (min-resolution: 2dppx) and (min-width:1158px) {
-    .section-hero {
+    .section-hero {  
         background-image: linear-gradient(rgba(46, 47, 66, 0.7),
                 rgba(46, 47, 66, 0.7)), url(../images/desktop-hero2x.jpg);
     }

@@ -105,8 +105,8 @@ button {
 }
 
 .page-header {
-  padding-top: 26px;
-  padding-bottom: 26px;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 
 .letter {
@@ -142,10 +142,6 @@ button {
   .nav {
     display: flex;
     align-items: center;
-  }
-  .header-container {
-    padding-right: 16px;
-    padding-left: 16px;
   }
   .header-link {
     font-weight: 500;
@@ -209,7 +205,7 @@ button {
     gap: 12px;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1158px) {
   .menu-contacts .contacts-list {
     flex-direction: row;
     gap: 40px;
@@ -218,6 +214,10 @@ button {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
+  }
+  .container {
+    padding-left: 15px;
+    padding-right: 15px;
   }
 }
 @media screen and (max-width: 767px) {
@@ -278,6 +278,10 @@ button {
   letter-spacing: 0.02em;
   text-transform: capitalize;
   color: #2E2F42;
+}
+
+.mobile-menu-color-contact {
+  color: #404BBF;
 }
 
 .mobile-menu-list {
@@ -375,8 +379,6 @@ button {
   }
 }
 .section-hero {
-  padding-top: 112px;
-  padding-bottom: 112px;
   background-color: #2E2F42;
   background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/mobile-hero.jpg);
   background-position: center;
@@ -428,6 +430,11 @@ button {
   background-color: #404BBF;
 }
 
+.section.section-hero {
+  padding-top: 112px;
+  padding-bottom: 112px;
+}
+
 @media screen and (min-device-pixel-ratio: 2) and (max-width: 767px), screen and (-webkit-min-device-pixel-ratio: 2) and (max-width: 767px), screen and (min-resolution: 192dpi) and (max-width: 767px), screen and (min-resolution: 2dppx) and (max-width: 767px) {
   .section-hero {
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/mobile-hero2x.jpg);
@@ -446,8 +453,16 @@ button {
 }
 @media screen and (min-width: 1158px) {
   .section-hero {
-    max-width: 1158px;
+    max-width: 1440px;
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/desktop-hero.jpg);
+  }
+  .section.section-hero {
+    padding-top: 188px;
+    padding-bottom: 188px;
+  }
+  .container.container-hero-desktop {
+    padding-left: 15px;
+    padding-right: 15px;
   }
 }
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 1158px), screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 1158px), screen and (min-resolution: 192dpi) and (min-width: 1158px), screen and (min-resolution: 2dppx) and (min-width: 1158px) {
@@ -456,15 +471,20 @@ button {
   }
 }
 .features-title {
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
+  font-weight: 700;
+  font-size: 36px;
+  font-style: normal;
+  line-height: 1.11;
   letter-spacing: 0.02em;
   color: #2E2F42;
+  text-transform: capitalize;
+  text-align: center;
 }
 
 .features-subtitle {
+  font-weight: 400;
   font-size: 16px;
+  font-style: normal;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
@@ -472,29 +492,61 @@ button {
 
 .features-list {
   display: flex;
-  gap: 24px;
+  flex-direction: column;
+  gap: 72px;
 }
 
-.features-list-item {
-  width: calc((100% - 72px) / 4);
+@media screen and (max-width: 1158px) {
+  .icon-feature {
+    display: none;
+  }
 }
-
-.icons-features {
-  width: 264px;
-  height: 112px;
-  background-color: #F4F4FD;
-  border-radius: 4px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 8px;
+@media screen and (min-width: 768px) {
+  .features-list {
+    -moz-column-gap: 24px;
+         column-gap: 24px;
+    row-gap: 72px;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .features-subtitle {
+    max-width: 356px;
+  }
+  .features-title {
+    text-align: start;
+  }
 }
-
-.icon-feature {
-  width: 60px;
-  height: 64px;
+@media screen and (min-width: 1158px) {
+  .icons-features {
+    width: 264px;
+    height: 112px;
+    background-color: #F4F4FD;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 8px;
+  }
+  .features-list-item {
+    width: calc((100% - 72px) / 4);
+  }
+  .section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+  .features-title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+  }
+  .features-subtitle {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #434455;
+  }
 }
-
 .section-work {
   padding-top: 0;
 }

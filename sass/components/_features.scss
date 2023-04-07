@@ -1,39 +1,91 @@
+
 .features-title {
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1.2;
+    font-weight: 700;
+    font-size: 36px;
+    font-style: normal;
+    line-height: 1.11;
     letter-spacing: 0.02em;
     color: $color-secondary;
+    text-transform: capitalize;
+    text-align: center;
 }
 
 .features-subtitle {
+    font-weight: 400;
     font-size: 16px;
+    font-style: normal;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: $color-primary;
+    
 }
 
 .features-list {
     display: flex;
-    gap: 24px;
+    flex-direction: column;
+    gap: 72px;
 }
 
-.features-list-item {
-width:calc((100% - 72px)/4);
+@media screen and (max-width:1158px) {
+    .icon-feature {
+    display: none;
+}
 }
 
+@media screen and (min-width:768px) {
+.features-list {
+    column-gap: 24px;
+    row-gap: 72px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    }
+    .features-subtitle {
+        max-width: 356px;
+       
+    }
+    .features-title {
+        text-align: start;
+}
+}
+@media screen and (min-width:1158px){
 .icons-features {
-    width: 264px;
-    height: 112px;
-    background-color:$color-background-secondary;
-    border-radius: 4px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 8px;
+        width: 264px;
+        height: 112px;
+        background-color: $color-background-secondary;
+        border-radius: 4px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 8px;
+    }
+ .features-list-item {
+        width: calc((100% - 72px)/4);
+        }
+.section {
+        padding-top: 120px;
+        padding-bottom: 120px;
+
 }
 
-.icon-feature {
-    width: 60px;
-    height: 64px;
+.features-title {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 1.2;
 }
+.features-subtitle {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+        color: $color-primary;
+
+}
+}
+
+
+
+
+// .icon-feature {
+//     width: 60px;
+//     height: 64px;
+// }

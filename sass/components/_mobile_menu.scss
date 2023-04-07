@@ -57,7 +57,10 @@
     letter-spacing: 0.02em;
     text-transform: capitalize;
     color: $color-secondary;
+}
 
+.mobile-menu-color-contact {
+    color: $color-pressed-state;
 }
 .mobile-menu-list {
     display: flex;

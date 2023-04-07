@@ -11,8 +11,8 @@
     
 }
 .page-header {
-    padding-top: 26px;
-    padding-bottom: 26px;
+    padding-top: 24px;
+    padding-bottom: 24px;
 }
 
 
@@ -54,10 +54,7 @@
     display: flex;
     align-items: center;
 }
-.header-container{
-    padding-right: 16px;
-    padding-left: 16px;
-}
+
 .header-link {
     font-weight: 500;
     font-size: 16px;
@@ -126,7 +123,7 @@
 }
 }
 
-@media screen and (min-width:1200px) {
+@media screen and (min-width:1158px) {
 .menu-contacts .contacts-list {
     flex-direction: row;
     gap:40px;
@@ -137,6 +134,11 @@ font-size: 16px;
 line-height: 1.5;
 letter-spacing: 0.02em;
 }
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
 }
 
 
