@@ -482,7 +482,7 @@ button {
 }
 
 .features-subtitle {
-  font-weight: 400;
+  font-weight: 500;
   font-size: 16px;
   font-style: normal;
   line-height: 1.5;
@@ -496,7 +496,7 @@ button {
   gap: 72px;
 }
 
-@media screen and (max-width: 1158px) {
+@media screen and (max-width: 1157px) {
   .icon-feature {
     display: none;
   }
@@ -540,7 +540,7 @@ button {
     line-height: 1.2;
   }
   .features-subtitle {
-    font-weight: 500;
+    font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
@@ -551,7 +551,7 @@ button {
     height: 64px;
   }
 }
-@media screen and (max-width: 1158px) {
+@media screen and (max-width: 1157px) {
   .section-work {
     display: none;
   }
@@ -566,6 +566,7 @@ button {
     letter-spacing: 0.02em;
     text-transform: capitalize;
     color: #2E2F42;
+    margin-bottom: 72px;
   }
   .work-title {
     text-align: center;
@@ -587,6 +588,7 @@ button {
   text-transform: capitalize;
   color: #2E2F42;
   text-align: center;
+  margin-bottom: 72px;
 }
 
 .name-employee-team {
@@ -617,7 +619,7 @@ button {
 .team-list {
   display: flex;
   flex-direction: column;
-  gap: 72px;
+  row-gap: 72px;
   align-items: center;
 }
 
@@ -649,6 +651,22 @@ button {
   background-color: #404BBF;
 }
 
+@media screen and (min-width: 768px) {
+  .team-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 64px;
+    -moz-column-gap: 24px;
+         column-gap: 24px;
+  }
+}
+@media screen and (min-width: 1158px) {
+  .team-list {
+    flex-direction: row;
+    justify-content: center;
+  }
+}
 .customers-title {
   font-weight: 700;
   letter-spacing: 0.02em;
