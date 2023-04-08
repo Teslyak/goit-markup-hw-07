@@ -1,7 +1,7 @@
 .section-hero {
     background-color: $color-secondary;
     background-image: linear-gradient(rgba(46, 47, 66, 0.7),
-            rgba(46, 47, 66, 0.7)), url(../images/mobile-hero.jpg);
+            rgba(46, 47, 66, 0.7)), url(../images/Hero/desktop-hero1x.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -61,7 +61,7 @@ screen and (min-resolution: 192dpi) and (max-width:767px),
 screen and (min-resolution: 2dppx) and (max-width:767px) {
     .section-hero {
 background-image: linear-gradient(rgba(46, 47, 66, 0.7),
-            rgba(46, 47, 66, 0.7)), url(../images/mobile-hero2x.jpg);
+            rgba(46, 47, 66, 0.7)), url(../images/Hero/mobile-hero2x.jpg);
     }
 }
 
@@ -69,7 +69,7 @@ background-image: linear-gradient(rgba(46, 47, 66, 0.7),
     .section-hero {
     max-width: 768px;
     background-image: linear-gradient(rgba(46, 47, 66, 0.7),
-                rgba(46, 47, 66, 0.7)), url(../images/tablet-hero.jpg);
+                rgba(46, 47, 66, 0.7)), url(../images/Hero/tablet-hero1x.jpg);
 }
 
 }
@@ -79,14 +79,14 @@ screen and (min-resolution: 192dpi) and (min-width:768px),
 screen and (min-resolution: 2dppx) and (min-width:768px) {
     .section-hero {
         background-image: linear-gradient(rgba(46, 47, 66, 0.7),
-                rgba(46, 47, 66, 0.7)), url(../images/tablet-hero2x.jpg);
+                rgba(46, 47, 66, 0.7)), url(../images/Hero/tablet-hero2x.jpg);
     }
 }
 @media screen and (min-width:1158px) {
     .section-hero {
         max-width: 1440px;
         background-image: linear-gradient(rgba(46, 47, 66, 0.7),
-                rgba(46, 47, 66, 0.7)), url(../images/desktop-hero.jpg);
+                rgba(46, 47, 66, 0.7)), url(../images/Hero/desktop-hero1x.jpg);
     }
     .section.section-hero {
         padding-top: 188px;
@@ -105,6 +105,6 @@ screen and (min-resolution: 192dpi) and (min-width:1158px),
 screen and (min-resolution: 2dppx) and (min-width:1158px) {
     .section-hero {  
         background-image: linear-gradient(rgba(46, 47, 66, 0.7),
-                rgba(46, 47, 66, 0.7)), url(../images/desktop-hero2x.jpg);
+                rgba(46, 47, 66, 0.7)), url(../images/Hero/desktop-hero2x.jpg);
     }
 }
