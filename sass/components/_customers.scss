@@ -54,11 +54,7 @@ row-gap: 72px;
 @media screen and (min-width:1158px) {
 
 .customers-list{
-column-gap:0;
-row-gap: 0;
+gap: 0;
 justify-content: space-between;
-
 }
-
-
 }
