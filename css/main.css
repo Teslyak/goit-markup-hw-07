@@ -306,7 +306,7 @@ button {
 .mobile-menu-tel {
   font-style: normal;
   font-weight: 700;
-  font-size: 36px;
+  font-size: 8vw;
   line-height: 1.11;
   letter-spacing: 0.02em;
   text-transform: capitalize;
@@ -781,6 +781,12 @@ button {
 .footer-container {
   padding-left: 15px;
   padding-right: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 72px;
+}
+
+.copyright-soc-wraper {
   display: flex;
   flex-direction: column;
   gap: 72px;
