@@ -913,7 +913,6 @@ button {
     align-items: start;
   }
   .copyright-soc-wraper {
-    display: flex;
     gap: 24px;
   }
   .social-footer-list {
@@ -922,7 +921,7 @@ button {
 }
 @media screen and (min-width: 1158px) {
   .footer-page {
-    max-width: 1158px;
+    max-width: 1440px;
     padding-top: 100px;
     padding-bottom: 100px;
   }
@@ -931,6 +930,9 @@ button {
   }
   .input-subscribe {
     width: 264px;
+  }
+  .copyright-soc-wraper {
+    flex-direction: row;
   }
 }
 .project-btn {
