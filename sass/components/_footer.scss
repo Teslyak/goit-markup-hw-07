@@ -62,7 +62,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: $color-logo-links;
     transition: background-color $transition-dur-time-func;
 }
 
@@ -86,8 +86,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 16px;
     width: 100%;
+    gap: 16px;
     
 }
 
@@ -96,6 +96,8 @@
     flex-direction: column;
     align-items: center;
     width: 100%;
+    gap:16px
+
 
    
 }
@@ -109,7 +111,9 @@
     
 }
 
-
+.form-subscribe-label {
+    width: 100%;
+}
 
 .input-subscribe {
     width: 100%;
@@ -147,4 +151,64 @@
 .btn-submit:hover {
     background-color: $color-pressed-state;
     
+}
+
+@media screen and (min-width:768px) {
+
+.footer-page {
+    max-width: 768px;
+    
+}
+.footer-container {
+    padding: 0;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-left: 108px;
+    padding-right: 108px;
+}
+
+.copyright-soc-wrap  {
+    display: flex;
+    width: 100%;
+    justify-content: start;
+}
+.copyright {
+    width:264px ;
+}
+.footer-copyright {
+    align-items: start;
+}
+.form-subscribe {
+    flex-direction: row;
+    align-items: start;
+
+}
+.form-subscribe-wraper {
+    align-items: start;
+}
+.social-footer {
+align-items: start;
+}
+.copyright-soc-wraper {
+    display: flex;
+    gap:24px;
+
+}
+.social-footer-list {
+    flex-wrap: nowrap;
+}
+}
+@media screen and (min-width:1158px) {
+.footer-page {
+    max-width: 1158px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.footer-container {
+    flex-wrap: nowrap;
+}
+.input-subscribe {
+   
+    width: 264px;
+}
 }
