@@ -59,7 +59,7 @@
     color: $color-secondary;
 }
 
-.mobile-menu-color-contact {
+.mobile-menu-color-link {
     color: $color-pressed-state;
 }
 .mobile-menu-list {
@@ -86,7 +86,7 @@
 .mobile-menu-tel{
     font-style: normal;
     font-weight: 700;
-    font-size: 8vw;
+    font-size: 36px;
     line-height: 1.11;
     letter-spacing: 0.02em;
     text-transform: capitalize;
@@ -146,7 +146,12 @@ margin-bottom: 48px;
     pointer-events: none;
 }
 
-
+@media screen and (max-width:427px) {
+    .mobile-menu-tel {
+        font-size: 8vw;
+    }
+    
+}
 
 @media screen and (min-width:428px) {
     .mobile-menu-container-width {

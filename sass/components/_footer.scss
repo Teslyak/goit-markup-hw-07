@@ -1,5 +1,4 @@
 .footer-page {
-    max-width: 428px;
     background-color: $color-secondary;
     margin-left: auto;
     margin-right: auto;
@@ -9,6 +8,7 @@
 
 .copyright {
     font-size: 16px;
+    font-style: normal;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: $color-border-btn;
@@ -92,7 +92,7 @@
     flex-direction: column;
     align-items: center;
     width: 100%;
-    gap: 16px;
+    gap: 24px;
     
 }
 
@@ -109,6 +109,7 @@
 
 .form-subscribe-title {
     font-weight: 500;
+    font-style: normal;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
@@ -116,12 +117,9 @@
     
 }
 
-.form-subscribe-label {
-    width: 100%;
-}
-
 .input-subscribe {
     width: 100%;
+    height: 40px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
@@ -136,7 +134,7 @@
 
 .btn-submit {
     font-family: 'Roboto', sans-serif;
-    max-width: 165px;
+    width: 165px;
     height: 40px;
     font-weight: 500;
     font-size: 16px;
@@ -146,7 +144,9 @@
     border-radius: 4px;
     border: none;
     padding-top: 8px;
+    padding-bottom: 8px;
     padding-left: 24px;
+    padding-right: 24px;
     display: flex;
     gap: 16px;
     transition: background-color $transition-dur-time-func;
@@ -159,17 +159,11 @@
 }
 
 @media screen and (min-width:768px) {
-
-.footer-page {
-    max-width: 768px;
-    
-}
 .footer-container {
-    padding: 0;
     flex-direction: row;
     flex-wrap: wrap;
-    padding-left: 108px;
-    padding-right: 108px;
+    width: 582px;
+    
 }
 
 .copyright-soc-wrap  {
@@ -195,28 +189,37 @@
 align-items: start;
 }
 .copyright-soc-wraper {
- 
+ flex-direction: row;
     gap:24px;
 
 }
 .social-footer-list {
     flex-wrap: nowrap;
 }
+.input-subscribe {
+    width: 264px;
+}
+
+
 }
 @media screen and (min-width:1158px) {
 .footer-page {
-    max-width: 1440px;
+    
     padding-top: 100px;
     padding-bottom: 100px;
 }
 .footer-container {
+    width: 1158px;
     flex-wrap: nowrap;
-}
-.input-subscribe {
-   
-    width: 264px;
+    gap:80px;
+
 }
 .copyright-soc-wraper {
     flex-direction: row;
+    gap:120px;
 }
+.form-subscribe {
+    gap: 24px;
+}
+
 }

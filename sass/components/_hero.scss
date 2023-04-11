@@ -71,7 +71,13 @@ background-image: linear-gradient(rgba(46, 47, 66, 0.7),
     background-image: linear-gradient(rgba(46, 47, 66, 0.7),
                 rgba(46, 47, 66, 0.7)), url(../images/Hero/tablet-hero1x.jpg);
 }
+.hero-title {
+    font-size: 56px;
+    line-height: 1.07;
+    max-width: 496px;
+    
 
+}
 }
 
 @media screen and (min-device-pixel-ratio: 2) and (min-width:768px),
