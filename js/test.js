@@ -66,22 +66,37 @@
 // let result = a + d + c + b;
 // console.log(result);
 
-function formatMessage(message, maxLength) {
-  let result;
-  // Change code below this line
-if (message.length <= maxLength) {
-  result = message;
-} else if (message.length > maxLength) {
-  result = message.slice(0 , maxLength) + "...";
+// function formatMessage(message, maxLength) {
+//   let result;
+//   // Change code below this line
+// if (message.length <= maxLength) {
+//   result = message;
+// } else if (message.length > maxLength) {
+//   result = message.slice(0 , maxLength) + "...";
+//   }
+//   console.log(message);
+//   console.log(message.length);
+//   /// Change code above this line
+//   return result;
+// }
+// formatMessage("Curabitur ligula sapien", 16);
+// formatMessage("Curabitur ligula sapien", 23);
+// formatMessage("Vestibulum facilisis purus nec", 20);
+// formatMessage("Vestibulum facilisis purus nec", 30);
+// formatMessage("Nunc sed turpis a felis in nunc fringilla", 15);
+// formatMessage("Nunc sed turpis a felis in nunc fringilla", 41);
+
+let login = prompt("Enter you login");
+let password;
+if (!login) {
+  console.log ("Скасовано");
+} else if (login === "Адмін") {
+  password = prompt("Enter you password");
+  if (password === "Я адмін") {
+    console.log("Здрастуйте!");
+  } else {
+    console.log("Невірний пароль");
   }
-  console.log(message);
-  console.log(message.length);
-  /// Change code above this line
-  return result;
+} else {
+  console.log("Я вас не знаю");
 }
-formatMessage("Curabitur ligula sapien", 16);
-formatMessage("Curabitur ligula sapien", 23);
-formatMessage("Vestibulum facilisis purus nec", 20);
-formatMessage("Vestibulum facilisis purus nec", 30);
-formatMessage("Nunc sed turpis a felis in nunc fringilla", 15);
-formatMessage("Nunc sed turpis a felis in nunc fringilla", 41);
