@@ -1,3 +1,4 @@
+
 // console.log(0 || ('0' && {}));
 
 // const pricePerDroid = 800;
@@ -142,7 +143,7 @@
 
 
 
-const fruits = ['apple', 'plum', 'pear', 'orange', 'banana'];
+// const fruits = ['apple', 'plum', 'pear', 'orange', 'banana'];
 
 // // Change code below this line
 // const firstTwoEls = fruits.slice(0 , 2) ;
@@ -215,33 +216,85 @@ const fruits = ['apple', 'plum', 'pear', 'orange', 'banana'];
 
 // createArrayOfNumbers(14, 17);
 
-function filterArray(numbers, value) {
-   // Change code below this line
-  let newArray = [];
-  for (const number of numbers) {
-    // console.log(number);
-    if (number > value) {
-      newArray.push(number);
-    }
-}
+// function filterArray(numbers, value) {
+//    // Change code below this line
+//   let newArray = [];
+//   for (const number of numbers) {
+//     // console.log(number);
+//     if (number > value) {
+//       newArray.push(number);
+//     }
+// }
 
-console.log(newArray);
-  // Change code above this line
-}
-filterArray([1, 2, 3, 4, 5], 3);
-filterArray([1, 2, 3, 4, 5], 4);
-filterArray([1, 2, 3, 4, 5], 5);
-filterArray([12, 24, 8, 41, 76], 38);
-filterArray([12, 24, 8, 41, 76], 20);
+// console.log(newArray);
+//   // Change code above this line
+// }
+// filterArray([1, 2, 3, 4, 5], 3);
+// filterArray([1, 2, 3, 4, 5], 4);
+// filterArray([1, 2, 3, 4, 5], 5);
+// filterArray([12, 24, 8, 41, 76], 38);
+// filterArray([12, 24, 8, 41, 76], 20);
 
-function getExtremeElements(array) {
+// function getExtremeElements(array) {
+//   // Change code below this line
+//   const firstElement = array[0];
+//   console.log(firstElement);
+//   const endElement = array[array.length - 1];
+//   console.log(endElement);
+//   const array2 = [firstElement , endElement];
+//   console.table(array2);
+// return array2  ;
+//   // Change code above this line
+// }
+
+// function getCommonElements(array1, array2) {
+//   // Change code below this line
+//   const newArray = [];
+
+//   for (const element of array1) {
+//   if (array2.includes(element)) {
+//     newArray.push(element);
+// }
+//  // Change code above this line
+//   }
+//   return newArray;
+//  }
+
+// console.log(getCommonElements([1, 2, 3], [2, 4]));
+// console.log(getCommonElements([1, 2, 3], [2, 1, 17, 19]));
+
+// const fruits = ["Яблуко", "Груша", "Апельсин"];
+// const shoppingCart = fruits;
+// shoppingCart.push("Банан");
+// console.log(fruits.length);
+
+// function calculateTotalPrice(order) {
+//   let total = 0;
+//   // Change code below this line
+
+//   for (const element of order) {
+    
+//     total += element;
+//   }
+
+//   // Change code above this line
+ 
+//   return total;
+// }
+// console.log(calculateTotalPrice([12, 85, 37, 4]));
+
+function includes(array, value) {
   // Change code below this line
-  const firstElement = array[0];
-  console.log(firstElement);
-  const endElement = array[array.length - 1];
-  console.log(endElement);
-  const array2 = [firstElement , endElement];
-  console.table(array2);
-return array2  ;
+  
+  for (let i = 0; i <= array.length; i += 1 ) {
+  
+if ( value === array[i]) {
+  return true;
+}
+    
+  }
+
   // Change code above this line
 }
+console.log(includes([1, 2, 3, 4, 5], 3));
+console.log(includes(["Earth", "Mars", "Venus", "Jupiter", "Saturn"], "Jupiter"));
