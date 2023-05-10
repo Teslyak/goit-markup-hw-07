@@ -283,18 +283,46 @@
 // }
 // console.log(calculateTotalPrice([12, 85, 37, 4]));
 
-function includes(array, value) {
-  // Change code below this line
+// function includes(array, value) {
+//   // Change code below this line
   
-  for (let i = 0; i <= array.length; i += 1 ) {
+//   for (let i = 0; i <= array.length; i += 1 ) {
   
-if ( value === array[i]) {
-  return true;
-}
+// if ( value === array[i]) {
+//   return true;
+// }
     
-  }
+//   }
 
-  // Change code above this line
+//   // Change code above this line
+// }
+// console.log(includes([1, 2, 3, 4, 5], 3));
+// console.log(includes(["Earth", "Mars", "Venus", "Jupiter", "Saturn"], "Jupiter"));
+
+// Example 7 - Сортування масиву із циклом
+// Напиши скрипт сортування масиву рядків в алфавітному порядку за першою літерою елемента.
+const langs = ['python', 'javascript', 'c++', 'haskel', 'php', 'ruby'];
+const result = [];
+
+const exm = [...langs].sort((a, b) => a.localeCompare(b))
+  console.log('example', exm);
+
+for (let i = 0; i < langs.length; i += 1) {
+  let max = langs[i];
+  if (result.includes(max)) {
+    continue;
+  }
+    
+    for (let j = i; j < langs.length; j += 1) {
+        if (max > langs[j] && !result.includes(langs[j])) {
+          max = langs[j];
+          langs.push(langs[i]);
+          
+      } 
+      
+  }
+  
+  result.push(max);
+  
 }
-console.log(includes([1, 2, 3, 4, 5], 3));
-console.log(includes(["Earth", "Mars", "Venus", "Jupiter", "Saturn"], "Jupiter"));
+console.log(result);
