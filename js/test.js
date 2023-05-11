@@ -301,31 +301,34 @@
 
 // Example 7 - Сортування масиву із циклом
 // Напиши скрипт сортування масиву рядків в алфавітному порядку за першою літерою елемента.
-// const langs = ['python', 'javascript', 'c++', 'haskel', 'php', 'ruby'];
-// const result = [];
+const langs = ['python', 'javascript', 'c++', 'haskel', 'php', 'ruby'];
+const result = [];
 
-// const exm = [...langs].sort((a, b) => a.localeCompare(b))
-//   console.log('example', exm);
+const exm = [...langs].sort((a, b) => a.localeCompare(b))
+  console.log('example', exm);
 
-// for (let i = 0; i < langs.length; i += 1) {
-//   let max = langs[i];
-//   if (result.includes(max)) {
-//     continue;
-//   }
-    
-//     for (let j = i; j < langs.length; j += 1) {
-//         if (max > langs[j] && !result.includes(langs[j])) {
-//           max = langs[j];
-//           langs.push(langs[i]);
-          
-//       }
+for (let i = 0; i < langs.length; i += 1) {
+  let max = langs[i];
+    if (result.includes(max)) {
       
-//   }
+      continue;
+      
+  }
+    
+    for (let j = i; j < langs.length; j += 1) {
+        if (max > langs[j] && !result.includes(langs[j])) {
+          max = langs[j];
+          langs.push(langs[i]);
+          
+      }
+      
+  }
   
-//   result.push(max);
+  result.push(max);
   
-// }
-// console.log(result);
+}
+console.log(result);
+console.log(langs);
 
 
 // // Push повертає нову довжину масиву. Результат буде 1
@@ -338,3 +341,9 @@
 //       return arr.push(i)
 //     }
 // }
+
+// const arr = ['start', 1, 2, 3, 'end'];
+// //shift
+// const item = arr.shift();
+// console.log(arr);
+// console.log(arr.shift());
