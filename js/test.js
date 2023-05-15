@@ -301,34 +301,34 @@
 
 // Example 7 - Сортування масиву із циклом
 // Напиши скрипт сортування масиву рядків в алфавітному порядку за першою літерою елемента.
-const langs = ['python', 'javascript', 'c++', 'haskel', 'php', 'ruby'];
-const result = [];
+// const langs = ['python', 'javascript', 'c++', 'haskel', 'php', 'ruby'];
+// const result = [];
 
-const exm = [...langs].sort((a, b) => a.localeCompare(b))
-  console.log('example', exm);
+// const exm = [...langs].sort((a, b) => a.localeCompare(b))
+//   console.log('example', exm);
 
-for (let i = 0; i < langs.length; i += 1) {
-  let max = langs[i];
-    if (result.includes(max)) {
+// for (let i = 0; i < langs.length; i += 1) {
+//   let max = langs[i];
+//     if (result.includes(max)) {
       
-      continue;
+//       continue;
       
-  }
+//   }
     
-    for (let j = i; j < langs.length; j += 1) {
-        if (max > langs[j] && !result.includes(langs[j])) {
-          max = langs[j];
-          langs.push(langs[i]);
+//     for (let j = i; j < langs.length; j += 1) {
+//         if (max > langs[j] && !result.includes(langs[j])) {
+//           max = langs[j];
+//           langs.push(langs[i]);
           
-      }
+//       }
       
-  }
+//   }
   
-  result.push(max);
+//   result.push(max);
   
-}
-console.log(result);
-console.log(langs);
+// }
+// console.log(result);
+// console.log(langs);
 
 
 // // Push повертає нову довжину масиву. Результат буде 1
@@ -347,3 +347,65 @@ console.log(langs);
 // const item = arr.shift();
 // console.log(arr);
 // console.log(arr.shift());
+
+// function countProps(object) {
+//   let propCount = 0;
+//   // Change code below this line
+//   const arrKey = [];
+//   for (const key in object) {
+ 
+// if (object.hasOwnProperty(key) ) {
+//   arrKey.push(key);
+//   propCount = arrKey.length
+// }
+  
+// }
+//   // Change code above this line
+//   return propCount;
+// }
+// console.log(countProps({ name: "Mango", age: 2 }));
+
+// function countProps(object) {
+//   // Change code below this line
+//   let propCount = 0;
+// const arrKeys = Object.keys(object);
+//   for (const key of arrKeys) {
+//       propCount += 1;
+//     }
+  
+
+//   return propCount;
+//   // Change code above this line
+// }
+// countProps({ name: "Mango", age: 2 })
+
+// function countTotalSalary(salaries) {
+//   let totalSalary = 0;
+//   // Change code below this line
+//   const arrSalaries = Object.values(salaries);
+// for (const key of arrSalaries ) {
+//   totalSalary += key;
+// }
+  
+//   // Change code above this line
+//   return totalSalary;
+// }
+// console.log(countTotalSalary({ mango: 100, poly: 150, alfred: 80 }));
+
+const colors = [
+  { hex: "#f44336", rgb: "244,67,54" },
+  { hex: "#2196f3", rgb: "33,150,243" },
+  { hex: "#4caf50", rgb: "76,175,80" },
+  { hex: "#ffeb3b", rgb: "255,235,59" },
+];
+
+const hexColors = [];
+const rgbColors = [];
+// Change code below this line
+for (const key of colors) {
+  if (key.hex) {
+    console.log(hexColors.push(colors[key]));
+  }
+  
+  
+}
