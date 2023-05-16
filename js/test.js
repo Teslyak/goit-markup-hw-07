@@ -392,20 +392,112 @@
 // }
 // console.log(countTotalSalary({ mango: 100, poly: 150, alfred: 80 }));
 
-const colors = [
-  { hex: "#f44336", rgb: "244,67,54" },
-  { hex: "#2196f3", rgb: "33,150,243" },
-  { hex: "#4caf50", rgb: "76,175,80" },
-  { hex: "#ffeb3b", rgb: "255,235,59" },
-];
+// const colors = [
+//   { hex: "#f44336", rgb: "244,67,54" },
+//   { hex: "#2196f3", rgb: "33,150,243" },
+//   { hex: "#4caf50", rgb: "76,175,80" },
+//   { hex: "#ffeb3b", rgb: "255,235,59" },
+// ];
 
-const hexColors = [];
-const rgbColors = [];
-// Change code below this line
-for (const key of colors) {
-  if (key.hex) {
-    console.log(hexColors.push(colors[key]));
-  }
+// const hexColors = [];
+// const rgbColors = [];
+// // Change code below this line
+// for (const key of colors) {
+//   if (key.hex) {
+//     console.log(hexColors.push(colors[key]));
+//   }
   
   
+// }
+// const person = {
+//   firstName: "John",
+//   age: 30,
+// };
+// const { firstName: personName } = person;
+// console.log(personName);
+
+// const object = {
+//   name: "John",
+//   country: "Ukraine",
+//   age: 25
+
+// }
+
+// const { name, country, age } = object;
+
+
+// const products = [
+//   { name: "Radar", price: 1300, quantity: 4 },
+//   { name: "Scanner", price: 2700, quantity: 3 },
+//   { name: "Droid", price: 400, quantity: 7 },
+//   { name: "Grip", price: 1200, quantity: 9 },
+// ];
+// let arrValues = [];
+// function getAllPropValues(propName) {
+//   // Change code below this line
+// for (const element of products) {
+//   if (element[propName]) {
+    
+//    arrValues.push(element[propName]);
+//   }
+    
+// }
+  
+// return arrValues;
+//   // Change code above this line
+// }
+
+// // console.log(getAllPropValues("name") );
+// console.log(getAllPropValues("quantity"));
+// console.log(getAllPropValues("price"));
+// console.log(getAllPropValues("category"));
+
+// const products = [
+//   { name: "Radar", price: 1300, quantity: 4 },
+//   { name: "Scanner", price: 2700, quantity: 3 },
+//   { name: "Droid", price: 400, quantity: 7 },
+//   { name: "Grip", price: 1200, quantity: 9 },
+// ];
+
+// function calculateTotalPrice(productName) {
+//   // Change code below this line
+//   let totalPrice  = 0;
+//   for (const product of products) {
+//   // console.log(product.price);
+// if (product.name === productName) {
+//   totalPrice += (product.price * product.quantity);
+// }
+  
+// }
+
+// return totalPrice;
+//   // Change code above this line
+// }
+// console.log(calculateTotalPrice("Radar"));
+
+// const forecast = {
+//   today: {
+//     low: 28,
+//     high: 32,
+//     icon: "https://www.flaticon.com/svg/static/icons/svg/861/861059.svg",
+//   },
+//   tomorrow: {
+//     low: 27,
+//     high: 31,
+//   },
+// };
+// // Change code below this line
+// const {today: {high: todayHigh, low: todayLow, icon: todayIcon = "https://www.flaticon.com/svg/static/icons/svg/2204/2204346.svg"}, tomorrow: {high, low, icon: tomorrowIcon = "https://www.flaticon.com/svg/static/icons/svg/2204/2204346.svg"}} = forecast;
+function makeTask(data) {
+  const completed = false;
+  const category = "General";
+  const priority = "Normal";
+  // Change code below this line
+  const testObject = { ...data, completed, category, priority };
+  console.log(testObject);
+  return testObject;
+  // Change code above this line
 }
+
+console.log(makeTask({ category: "Homemade", priority: "Low", text: "Take out the trash" }));
+// console.log(makeTask({}));
