@@ -488,16 +488,29 @@
 // };
 // // Change code below this line
 // const {today: {high: todayHigh, low: todayLow, icon: todayIcon = "https://www.flaticon.com/svg/static/icons/svg/2204/2204346.svg"}, tomorrow: {high, low, icon: tomorrowIcon = "https://www.flaticon.com/svg/static/icons/svg/2204/2204346.svg"}} = forecast;
-function makeTask(data) {
-  const completed = false;
-  const category = "General";
-  const priority = "Normal";
-  // Change code below this line
-  const testObject = { ...data, completed, category, priority };
-  console.log(testObject);
-  return testObject;
-  // Change code above this line
-}
+// function makeTask(data) {
+//   const completed = false;
+//   const category = "General";
+//   const priority = "Normal";
+//   // Change code below this line
+//   const testObject = { ...data, completed, category, priority };
+//   console.log(testObject);
+//   return testObject;
+//   // Change code above this line
+// }
 
-console.log(makeTask({ category: "Homemade", priority: "Low", text: "Take out the trash" }));
-// console.log(makeTask({}));
+// console.log(makeTask({ category: "Homemade", priority: "Low", text: "Take out the trash" }));
+// // console.log(makeTask({}));
+
+const bookShelf = {
+  // Change code below this line
+  books: ["The last kingdom", "The guardian of dreams"],
+  getBooks() {
+    
+    return "Returning all books";
+  },
+  addBook(bookName) {
+    return `Adding book ${bookName}`;
+  },
+  // Change code above this line
+};
