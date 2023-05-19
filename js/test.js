@@ -662,9 +662,101 @@
 // // console.log(atTheOldToad.removePotion("Speed potion"));
 // console.log(atTheOldToad.updatePotionName("Stone skin", "Invulnerability potion"));
 
-const fnA function (x) {
-  delete x;
-  return x;
-}
+// const fnA function (x) {
+//   delete x;
+//   return x;
+// }
   
-  fnA(1);
+//   fnA(1);
+//=====Модуль 4
+// function deliverPizza(pizzaName) {
+//   return `Delivering ${pizzaName} pizza.`;
+// }
+
+// function makePizza(pizzaName) {
+//   return `Pizza ${pizzaName} is being prepared, please wait...`;
+// }
+
+// // Chande code below this line
+// function makeMessage(pizzaName, callback) {
+//   callback (pizzaName)
+//   return callback (pizzaName);
+// }
+
+// console.log(makeMessage("Royal Grand", makePizza));
+// console.log(makeMessage("Ultracheese", deliverPizza));
+
+// function makePizza(pizzaName, callback) {
+//   console.log(`Pizza ${pizzaName} is being prepared, please wait...`);
+//   callback(pizzaName);
+// }
+
+// makePizza("Royal Grand", function deliverPizza(pizzaName) {
+//   console.log(`Delivering pizza ${pizzaName}.`);
+// });
+// // Change code below this line
+ 
+// makePizza("Ultracheese", function eatPizza(pizzaName,) {
+//   console.log(`Eating pizza ${pizzaName}`);
+// });
+
+// const pizzaPalace = {
+//   pizzas: ["Ultracheese", "Smoked", "Four meats"],
+//   order(pizzaName, onSuccess, onError) {
+//     if (!pizzaPalace.pizzas.includes(pizzaName)) {
+//       onError(pizzaName);
+//       return onError(pizzaName);
+//     }
+//     onSuccess(pizzaName);
+//     return onSuccess(pizzaName);
+//   },
+// };
+// // Change code above this line
+
+// // Callback for onSuccess
+// function makePizza(pizzaName) {
+//   return `Your order is accepted. Cooking pizza ${pizzaName}.`;
+// }
+
+// // Callback for onError
+// function onOrderError(error) {
+//   return `There is no pizza with a name ${error}`;
+// }
+
+// // Method calls with callbacks
+// console.log(pizzaPalace.order("Smoked", makePizza, onOrderError)) ;
+// console.log(pizzaPalace.order("Four meats", makePizza, onOrderError));
+// console.log(pizzaPalace.order("Big Mike", makePizza, onOrderError));
+// console.log(pizzaPalace.order("Vienna", makePizza, onOrderError));
+
+// function filterArray(numbers, value) {
+//   const filteredNumbers = [];
+//   // Change code below this line
+//   numbers.forEach(function (numbers, index) {
+//       if (numbers > value) {
+//       filteredNumbers.push(numbers);
+//     }
+//     })
+  
+    
+  
+
+//   // Change code above this line
+//   return filteredNumbers;
+// }
+
+// console.log(filterArray([1, 2, 3, 4, 5], 3));
+
+// function calculateTotalPrice(orderedItems) {
+//   let totalPrice = 0;
+//   // Change code below this line
+
+//   orderedItems.forEach(function (orderedItems, index) { 
+//     totalPrice += orderedItems; 
+    
+//   })
+
+//   // Change code above this line
+//   return totalPrice;
+// }
+// console.log(calculateTotalPrice([12, 85, 37, 4])); 
