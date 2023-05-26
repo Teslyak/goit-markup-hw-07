@@ -984,6 +984,126 @@
 
 // const eachElementInFirstIsEven = secondArray.every(el => !(el % 2));
 // console.log(eachElementInFirstIsEven);
+// const users = [
+//   {
+//     name: "Moore Hensley",
+//     email: "moorehensley@indexia.com",
+//     eyeColor: "blue",
+//     friends: ["Sharron Pace"],
+//     isActive: false,
+//     balance: 2811,
+//     gender: "male"
+//   },
+//   {
+//     name: "Sharlene Bush",
+//     email: "sharlenebush@tubesys.com",
+//     eyeColor: "blue",
+//     friends: ["Briana Decker", "Sharron Pace"],
+//     isActive: true,
+//     balance: 3821,
+//     gender: "female"
+//   },
+//   {
+//     name: "Ross Vazquez",
+//     email: "rossvazquez@xinware.com",
+//     eyeColor: "green",
+//     friends: ["Marilyn Mcintosh", "Padilla Garrison", "Naomi Buckner"],
+//     isActive: false,
+//     balance: 3793,
+//     gender: "male"
+//   },
+//   {
+//     name: "Elma Head",
+//     email: "elmahead@omatom.com",
+//     eyeColor: "green",
+//     friends: ["Goldie Gentry", "Aisha Tran"],
+//     isActive: true,
+//     balance: 2278,
+//     gender: "female"
+//   },
+//   {
+//     name: "Carey Barr",
+//     email: "careybarr@nurali.com",
+//     eyeColor: "blue",
+//     friends: ["Jordan Sampson", "Eddie Strong"],
+//     isActive: true,
+//     balance: 3951,
+//     gender: "male"
+//   },
+//   {
+//     name: "Blackburn Dotson",
+//     email: "blackburndotson@furnigeer.com",
+//     eyeColor: "brown",
+//     friends: ["Jacklyn Lucas", "Linda Chapman"],
+//     isActive: false,
+//     balance: 1498,
+//     gender: "male"
+//   },
+//   {
+//     name: "Sheree Anthony",
+//     email: "shereeanthony@kog.com",
+//     eyeColor: "brown",
+//     friends: ["Goldie Gentry", "Briana Decker"],
+//     isActive: true,
+//     balance: 2764,
+//     gender: "female"
+//   }
+// ]
+// const calculateTotalBalance = users => {
+//     const totalBalanceAllUsers = users.reduce((total, el) => {
+//         return total + el.balance;
+       
+        
+//     },0);
+//      return totalBalanceAllUsers;
+// };
+
+// console.log(calculateTotalBalance(users));
+
+// const getTotalFriendCount = users => {
+//     const totalFriendCount = users.reduce((total, el) => {
+//       return total + el.friends.length;
+// },0);
+//     return totalFriendCount;
+//   };
+
+// console.log(getTotalFriendCount(users));
+
+// const books = [
+//   {
+//     title: "The Last Kingdom",
+//     author: "Bernard Cornwell",
+//     rating: 8.38,
+//   },
+//   {
+//     title: "Beside Still Waters",
+//     author: "Robert Sheckley",
+//     rating: 8.51,
+//   },
+//   {
+//     title: "The Dream of a Ridiculous Man",
+//     author: "Fyodor Dostoevsky",
+//     rating: 7.75,
+//   },
+//   { title: "Redder Than Blood", author: "Tanith Lee", rating: 7.94 },
+//   { title: "Enemy of God", author: "Bernard Cornwell", rating: 8.67 },
+// ];
+// // Change code below this line
+
+// // const sortedByAuthorName = books.sort(({title: a}, {title: b}) => a.localeCompare(b));
+
+// const sortedByReversedAuthorName = books.sort(({title: a}, {title: b}) => b.localeCompare(a));
+
+// // const sortedByAscendingRating = books.sort(({rating: a}, {rating: b}) => a - b);
+
+// // const sortedByDescentingRating = books.sort(({rating: a}, {rating: b}) => b - a);
+
+// // console.log(sortedByAuthorName);
+// // console.log(sortedByAscendingRating);
+// // console.log(sortedByDescentingRating );
+// console.log(sortedByReversedAuthorName);
+
+
 const users = [
   {
     name: "Moore Hensley",
@@ -1049,22 +1169,42 @@ const users = [
     gender: "female"
   }
 ]
-// const calculateTotalBalance = users => {
-//     const totalBalanceAllUsers = users.reduce((total, el) => {
-//         return total + el.balance;
-       
-        
-//     },0);
-//      return totalBalanceAllUsers;
+
+// // Change code below this line
+// const sortByAscendingBalance = users => {
+//   const ascendingBalance = [...users].sort(({ balance: a }, { balance: b }) => a - b)
+//   .map((item) => item.name);
+  
+//   return ascendingBalance;
 // };
+// // Change code above this line
 
-// console.log(calculateTotalBalance(users));
+// console.log(sortByAscendingBalance(users));
+// console.log(users);
 
-const getTotalFriendCount = users => {
-    const totalFriendCount = users.reduce((total, el) => {
-      return total + el.friends.length;
-},0);
-    return totalFriendCount;
-  };
 
-console.log(getTotalFriendCount(users));
+
+// // Change code below this line
+// const sortByDescendingFriendCount = users => {
+//    const descendingFriendCount = [...users].sort(({friends:a}, {friends:b}) => b.length - a.length);
+// };
+// // Change code above this line
+
+// console.log(sortByDescendingFriendCount(users));
+// console.log(descendingFriendCount);
+
+// // Change code below this line
+// const getNamesSortedByFriendCount = users => {
+//    const namesSortedByFriendCount = [...users].sort(({friends: a}, {friends: b}) => a.length - b.length).map(({name}) => name);
+//   return namesSortedByFriendCount;
+// };
+// // Change code above this line
+// console.log(getNamesSortedByFriendCount(users));
+
+// Change code below this line
+const getSortedFriends = users => {
+   const arrSortedFriends = users.flatMap(({friends}) => friends).filter((el, idx, arrey) => arrey.indexOf(el) === idx).sort((a, b) => a.localeCompare(b));
+  return arrSortedFriends;
+};
+// Change code above this line
+console.log(getSortedFriends(users));
