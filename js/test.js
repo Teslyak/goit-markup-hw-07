@@ -1104,71 +1104,71 @@
 // console.log(sortedByReversedAuthorName);
 
 
-const users = [
-  {
-    name: "Moore Hensley",
-    email: "moorehensley@indexia.com",
-    eyeColor: "blue",
-    friends: ["Sharron Pace"],
-    isActive: false,
-    balance: 2811,
-    gender: "male"
-  },
-  {
-    name: "Sharlene Bush",
-    email: "sharlenebush@tubesys.com",
-    eyeColor: "blue",
-    friends: ["Briana Decker", "Sharron Pace"],
-    isActive: true,
-    balance: 3821,
-    gender: "female"
-  },
-  {
-    name: "Ross Vazquez",
-    email: "rossvazquez@xinware.com",
-    eyeColor: "green",
-    friends: ["Marilyn Mcintosh", "Padilla Garrison", "Naomi Buckner"],
-    isActive: false,
-    balance: 3793,
-    gender: "male"
-  },
-  {
-    name: "Elma Head",
-    email: "elmahead@omatom.com",
-    eyeColor: "green",
-    friends: ["Goldie Gentry", "Aisha Tran"],
-    isActive: true,
-    balance: 2278,
-    gender: "female"
-  },
-  {
-    name: "Carey Barr",
-    email: "careybarr@nurali.com",
-    eyeColor: "blue",
-    friends: ["Jordan Sampson", "Eddie Strong"],
-    isActive: true,
-    balance: 3951,
-    gender: "male"
-  },
-  {
-    name: "Blackburn Dotson",
-    email: "blackburndotson@furnigeer.com",
-    eyeColor: "brown",
-    friends: ["Jacklyn Lucas", "Linda Chapman"],
-    isActive: false,
-    balance: 1498,
-    gender: "male"
-  },
-  {
-    name: "Sheree Anthony",
-    email: "shereeanthony@kog.com",
-    eyeColor: "brown",
-    friends: ["Goldie Gentry", "Briana Decker"],
-    isActive: true,
-    balance: 2764,
-    gender: "female"
-  }
-]
+// const users = [
+//   {
+//     name: "Moore Hensley",
+//     email: "moorehensley@indexia.com",
+//     eyeColor: "blue",
+//     friends: ["Sharron Pace"],
+//     isActive: false,
+//     balance: 2811,
+//     gender: "male"
+//   },
+//   {
+//     name: "Sharlene Bush",
+//     email: "sharlenebush@tubesys.com",
+//     eyeColor: "blue",
+//     friends: ["Briana Decker", "Sharron Pace"],
+//     isActive: true,
+//     balance: 3821,
+//     gender: "female"
+//   },
+//   {
+//     name: "Ross Vazquez",
+//     email: "rossvazquez@xinware.com",
+//     eyeColor: "green",
+//     friends: ["Marilyn Mcintosh", "Padilla Garrison", "Naomi Buckner"],
+//     isActive: false,
+//     balance: 3793,
+//     gender: "male"
+//   },
+//   {
+//     name: "Elma Head",
+//     email: "elmahead@omatom.com",
+//     eyeColor: "green",
+//     friends: ["Goldie Gentry", "Aisha Tran"],
+//     isActive: true,
+//     balance: 2278,
+//     gender: "female"
+//   },
+//   {
+//     name: "Carey Barr",
+//     email: "careybarr@nurali.com",
+//     eyeColor: "blue",
+//     friends: ["Jordan Sampson", "Eddie Strong"],
+//     isActive: true,
+//     balance: 3951,
+//     gender: "male"
+//   },
+//   {
+//     name: "Blackburn Dotson",
+//     email: "blackburndotson@furnigeer.com",
+//     eyeColor: "brown",
+//     friends: ["Jacklyn Lucas", "Linda Chapman"],
+//     isActive: false,
+//     balance: 1498,
+//     gender: "male"
+//   },
+//   {
+//     name: "Sheree Anthony",
+//     email: "shereeanthony@kog.com",
+//     eyeColor: "brown",
+//     friends: ["Goldie Gentry", "Briana Decker"],
+//     isActive: true,
+//     balance: 2764,
+//     gender: "female"
+//   }
+// ]
 
 // // Change code below this line
 // const sortByAscendingBalance = users => {
@@ -1202,9 +1202,110 @@ const users = [
 // console.log(getNamesSortedByFriendCount(users));
 
 // Change code below this line
-const getSortedFriends = users => {
-   const arrSortedFriends = users.flatMap(({friends}) => friends).filter((el, idx, arrey) => arrey.indexOf(el) === idx).sort((a, b) => a.localeCompare(b));
-  return arrSortedFriends;
-};
+// const getSortedFriends = users => {
+//    const arrSortedFriends = users.flatMap(({friends}) => friends).filter((el, idx, arrey) => arrey.indexOf(el) === idx).sort((a, b) => a.localeCompare(b));
+//   return arrSortedFriends;
+// };
 // Change code above this line
-console.log(getSortedFriends(users));
+// console.log(getSortedFriends(users));
+
+// const object = {
+//   message: 'Hello, World',
+//   getMessage() {
+//     const message = 'Hello, Earth';
+//     return this.message;
+//   },
+// };
+// console.log(object.getMessage());
+
+// class Storage  {
+//   constructor(items) {
+//     this.items = items;
+//   }
+//     getItems() {
+//       return this.items;
+//     }
+//     addItem(newItem) {
+//       return this.items.push(newItem);
+      
+//     }
+//   removeItem(itemToRemove) {
+  
+//     if (this.items.includes(itemToRemove)) {
+//         const idx = this.items.indexOf(itemToRemove);
+//        return this.items.splice(idx, 1);
+//     }
+    
+//     }
+   
+ 
+// }
+
+
+// // Change code above this line
+// const storage = new Storage(["Nanitoids", "Prolonger", "Antigravitator"]);
+// console.log(storage.getItems()); // ["Nanitoids", "Prolonger", "Antigravitator"]
+// storage.addItem("Droid");
+// console.log(storage.getItems()); // ["Nanitoids", "Prolonger", "Antigravitator", "Droid"]
+// storage.removeItem("Prolonger");
+// console.log(storage.getItems()); // ["Nanitoids", "Antigravitator", "Droid"]
+
+
+// class StringBuilder {
+// constructor (initialValue) {
+//   this.value = initialValue;
+// }
+//   getValue() {
+//    return this.value;
+     
+//   }
+  
+//   padStart(str) {
+//     this.value = str + this.value;
+    
+    
+//   }
+//   padEnd(str) {
+//     this.value = this.value + str;
+//   }
+
+//   padBoth(str) {
+  
+//     this.value = str + this.value + str;
+
+//   }
+// }
+
+
+// // Change code above this line
+// const builder = new StringBuilder(".");
+// console.log(builder.getValue()); // "."
+// builder.padStart("^");
+// console.log(builder.getValue()); // "^."
+// builder.padEnd("^");
+// console.log(builder.getValue()); // "^.^"
+// builder.padBoth("=");
+// console.log(builder.getValue()); // "=^.^="
+
+
+class Car {
+  static #MAX_PRICE = 50000;
+  // Change code below this line
+ static checkPrice (price) {
+   if (price >= Car.#MAX_PRICE) {
+    return "Error! Price exceeds the maximum";    
+   } 
+     return "Success! Price is within acceptable limits";
+ } 
+  
+  // Change code above this line
+  constructor({ price }) {
+    this.price = price;
+  }
+}
+
+const audi = new Car({ price: 36000 });
+const bmw = new Car({ price: 64000 });
+
+console.log(Car.checkPrice(audi.price)); // "Success! Price is within acceptable limits"
+console.log(Car.checkPrice(bmw.price)); // "Error! Price exceeds the maximum"
